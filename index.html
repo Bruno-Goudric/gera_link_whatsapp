@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gerador de Link para Whatsapp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    
+<div class="row">
+    <div class="col-sm-6 box_info">
+        <ul class="list-number">
+            <li class="list-number__item">Insira o nº do WhatsApp Ex: 85996605866</li>
+            <li class="list-number__item">Escreva a mensagem padrão que será exibida</li>
+            <li class="list-number__item">Clique em &#8220;gerar link&#8221;</li>
+            <li class="list-number__item">Antes de usar, faça o teste</li>
+        </ul>
+    </div>
+    <div class="col-sm-6 box_form">
+        <h2 class="tit-principal">Gerador de link para Whatsapp</h2>
+        <div class="col-sm-9">
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="numero">Numero do Celular:</label>
+                    <input type="text" class="form-control" placeholder="Informe seu número" id="phone">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="msg">Mensagem:</label>
+                    <input type="text" class="form-control" placeholder="Informe seu número" id="msg">
+                </div> -->
+                <button type="submit" class="btn btn-primary">gerar o link</button>
+                <p>Não guardamos nenhum dado informado</p>
+            </form>
+            <div id="link">
+
+            </div>
+        </div>    
+    </div>
+</div>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Link Gerado</h2>
+            <h2 id="link_gerado"></h2>
+        </div>
+    </div>
+</div> -->
+<script src="gera_link.js"></script>
+</body>
+</html>

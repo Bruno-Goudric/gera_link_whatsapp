@@ -1,0 +1,60 @@
+.box_info{
+    background-color: red;
+    padding-top: 25vh;
+    width: 100%;
+    height: 625px;
+}
+
+.box_form{
+    background-color: #01bfa5;
+}
+
+.tit-principal{
+    text-align: center;
+    padding-top: 20vh;
+    color: #fff;
+    font-weight: bold;
+
+}
+.list-number{
+    list-style:none;
+    text-align:left;
+}
+
+.list-number__item{
+    font-size:22px;
+    color:#fff;
+    position:relative;
+    counter-increment:items;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.list-number__item:before{
+    content:counter(items);
+    width:50px;
+    height:50px;
+    background-color:#fff;
+    border-radius:50%;
+    color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:25px;
+    flex:none;
+    font-weight:700
+    }
+    @media screen and (max-width:768px){
+        .form,.box-mensagem{
+            padding:0;
+        }
+        .tit-principal{
+            text-align:center;
+        }
+
+.tchau{
+    background-color: yellow;
+}
+
